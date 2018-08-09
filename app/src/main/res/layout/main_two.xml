@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main2">
+
+
+    <LinearLayout
+        android:id="@+id/Layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/test2" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:textColor="#ff000000"
+            android:text="SharedPreferences 테스트 앱"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:textColor="#ff000000"
+            android:text="blog.naver.com/xhdtn8070"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/txtView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:textColor="#ff000000"
+            android:text="github.com/xhdtn8070"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/enroll"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/md_blue_600"
+            android:padding="15dp"
+            android:text="등록하기"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/md_blue_600"
+            android:padding="15dp"
+            android:text="호출하기"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</RelativeLayout>
